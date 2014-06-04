@@ -6,16 +6,19 @@
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Helvetica Neue">
 <link rel="shortcut icon" href="favicon.png">
 <title>bdesi</title><style type="text/css">
-html, body {font-family:'Helvetica Neue', Helvetica, Arial,sans-serif; color:#FFF; background:#f9f9f9; url(https://raw.github.com/theuiguru/bdesi/gh-pages/theOfficeDiwali.JPG) no-repeat center fixed; background-size:cover;}
+html, body {font-family:'Helvetica Neue', Helvetica, Arial,sans-serif; color:#FFF; background:#f9f9f9; background-size:cover;}
 header, .header {background:#ff9900; position:fixed; top:0; left:0; width:100%; text-align:center; height:60px;}
 h1 {font-size:40px; font-weight:500; color:#fff; margin-top:10px; font-family:'Pinyon Script', sans-serif;}
 a {color:#ff9900; text-decoration:none;}
 img {max-width:100%;}
-.main {border-radius:3px; background:#fff; margin:5em auto; max-width:550px;}
+.main {opacity:0; border-radius:3px; background:#fff; margin:5em auto; max-width:550px;}
 .bdesi {max-width:100%; margin:0 0 20px; font-size:2em; padding:20px; background-color:#ff9900; text-align:center; cursor:pointer;}
 .bdesi:hover {background-color:#ffcc00;}
 footer > .footer {color:#bbb; font-size:11px; font-weight:bold; padding:20px 0; text-align:center; background:#fff; border-top:1px solid #eee;} .footer a {color:#bbb;} .footer a:hover {text-decoration:underline;}
-</style></head><body>
-<header><div class="header"><h1>bdesi</h1></div></header>
-<div class="main"><a href="./"><img src="http://theuiguru.github.io/bdesi/theOfficeDiwali.JPG"></a><!--<p><a href="http://foursquare.com/oauth2/authenticate"><img src="https://playfoursquare.s3.amazonaws.com/press/logo/checkinon-blue.png"></a></p>--><div class="bdesi">let's play!</div>
-<footer><div class="footer">bdesi &copy; 2014. Lovingly made on LI. Powered by <a href="http://foursquare.com">Foursquare</a>.</div></footer></div></body></html>
+</style></head><body><header><div class="header"><h1>bdesi</h1></div></header>
+<div class="main"><a href="./"><img src="./theOfficeDiwali.JPG" class="mainimg"></a><!--<p><a href="http://foursquare.com/oauth2/authenticate"><img src="https://playfoursquare.s3.amazonaws.com/press/logo/checkinon-blue.png"></a></p>--><div class="bdesi">let's play!</div>
+<footer><div class="footer">bdesi &copy; 2014. Lovingly made on LI. Powered by <a href="http://foursquare.com">Foursquare</a>.</div></footer></div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script><script type="text/javascript">
+jQuery(document).ready(function() {
+    	jQuery(".main").animate({opacity: 1}, 700);
+}); </script></body></html>
