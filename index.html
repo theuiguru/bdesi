@@ -25,4 +25,10 @@ $(function() {
     $('.main').fadeOut('fast');
   });
   var url = 'https://api.foursquare.com/v2/venues/categories?oauth_token=3FLJTHPL4OHWMZO2G2DGJ2HPAJJPTPVCW0EEZX12PKV32GBS&v=20130312';
+  $.getJSON(url, function(json) {
+    var places = json.response.categories;
+		for(var i=0; i<10; i++) {
+			$('.bdesi').append('');
+		}
+	});
 });</script></body></html>
