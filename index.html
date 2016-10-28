@@ -18,20 +18,5 @@ img {max-width:100%;}
 footer > .footer {color:#bbb; font-size:11px; font-weight:bold; padding:20px 0; text-align:center; background:#fff; border-top:1px solid #eee;} .footer a {color:#bbb;} .footer a:hover {text-decoration:underline;}
 </style></head><body><header><div class="header"><h1>bdesi</h1></div></header>
 <div class="main"><a href="./"><img src="./theOfficeDiwali.JPG" class="mainimg"></a><!--<p><a href="http://foursquare.com/oauth2/authenticate"><img src="https://playfoursquare.s3.amazonaws.com/press/logo/checkinon-blue.png"></a></p>--><div class="bdesi">check in</div>
-<div class="categories"></div>
 <footer><div class="footer">bdesi &copy; 2014. Lovingly made on LI. Powered by <a href="https://api.foursquare.com"><img src="https://playfoursquare.s3.amazonaws.com/press/2014/foursquare-icon-16x16.png">oursquare</a>.</div></footer></div>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script><script type="text/javascript">
-$(function() {
-  $('.categories').hide();
-  $('.bdesi').click(function() {
-    $('.bdesi, .mainimg').fadeOut('fast');
-    $('.categories').show();
-  });
-  var url = "https://api.foursquare.com/v2/venues/categories?oauth_token=3FLJTHPL4OHWMZO2G2DGJ2HPAJJPTPVCW0EEZX12PKV32GBS&v=20130312";
-  $.getJSON(url, function(json) {
-  	var icons = json.response.categories;
-  	for(var i=0; i<10; i++) {
-  		$('.categories').append('<img src="' + icons[i].icon.prefix + 'bg_88' + icons[i].icon.suffix + '">');
-  	}
-  });
-});</script></body></html>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script><script type="text/javascript"></script></body></html>
