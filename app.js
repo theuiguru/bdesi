@@ -1,3 +1,5 @@
+document.querySelector(".year").innerText = new Date().getFullYear();
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
         var lat = position.coords.latitude,
