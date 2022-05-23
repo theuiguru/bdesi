@@ -1,4 +1,4 @@
-document.querySelector(".year").innerText = new Date().getFullYear();
+const year = document.querySelector('.year').textContent = new Date().getFullYear();
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
